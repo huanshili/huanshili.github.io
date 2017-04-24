@@ -10,7 +10,7 @@
     
     <title>
         
-            Hello World | 
+            微信小程序开发总结 | 
         
         七月外星人的博客
     </title>
@@ -58,7 +58,7 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="http://yoursite.com">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="Hello World | 七月外星人的博客">
+    <meta property="og:title" content="微信小程序开发总结 | 七月外星人的博客">
     <meta property="og:description" content="null">
     
 
@@ -247,7 +247,7 @@
     </button>
 
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Quick-Start"><span class="post-toc-number">1.</span> <span class="post-toc-text">Quick Start</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Create-a-new-post"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">Create a new post</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Run-server"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">Run server</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Generate-static-files"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">Generate static files</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Deploy-to-remote-sites"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#data"><span class="post-toc-number">1.</span> <span class="post-toc-text">data-*</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#在wxml文件中通过添加data-属性来传递我们需要的值"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">在wxml文件中通过添加data-属性来传递我们需要的值</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#在js文件中获取值"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">在js文件中获取值</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#通过navigator传递参数"><span class="post-toc-number">2.</span> <span class="post-toc-text">通过navigator传递参数</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#在navigator的url中添加需要传递的值"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">在navigator的url中添加需要传递的值</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#在跳转的页面获取值"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">在跳转的页面获取值</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#页面间实现通信"><span class="post-toc-number">3.</span> <span class="post-toc-text">页面间实现通信</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#在A页面定义一个函数"><span class="post-toc-number">3.1.</span> <span class="post-toc-text">在A页面定义一个函数</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#在B页面通过getCurrentPages-得到A页面的实例"><span class="post-toc-number">3.2.</span> <span class="post-toc-text">在B页面通过getCurrentPages()得到A页面的实例</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#在A页面判断isRefresh的值从而实现刷新"><span class="post-toc-number">3.3.</span> <span class="post-toc-text">在A页面判断isRefresh的值从而实现刷新</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#在模拟器上可以实现但真机无法实现"><span class="post-toc-number">4.</span> <span class="post-toc-text">在模拟器上可以实现但真机无法实现</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#下拉刷新在真机上无效"><span class="post-toc-number">4.1.</span> <span class="post-toc-text">下拉刷新在真机上无效</span></a></li></ol></li></ol>
 
         <!--
         <li class="mdl-menu__item">
@@ -284,7 +284,7 @@
         
     
             <p class="article-headline-p">
-                Hello World
+                微信小程序开发总结
             </p>
         </div>
 
@@ -303,7 +303,7 @@
     <!-- Author Name & Date -->
     <div>
         <strong>七月外星人</strong>
-        <span>2月 23, 2017</span>
+        <span>4月 24, 2017</span>
     </div>
 
     <div class="section-spacer"></div>
@@ -343,7 +343,7 @@
 
     <!-- Share Weibo -->
     
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=Hello World&url=http://yoursite.com//2017/02/23/hello-world/index.html&pic=&searchPic=false&style=simple" target="_blank">
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=微信小程序开发总结&url=http://yoursite.com//2017/04/24/微信小程序开发总结/index.html&pic=&searchPic=false&style=simple" target="_blank">
             <li class="mdl-menu__item">
                 分享到微博
             </li>
@@ -352,7 +352,7 @@
 
     <!-- Share Twitter -->
     
-        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=Hello World&url=http://yoursite.com//2017/02/23/hello-world/index.html&via=七月外星人" target="_blank">
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=微信小程序开发总结&url=http://yoursite.com//2017/04/24/微信小程序开发总结/index.html&via=七月外星人" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Twitter
             </li>
@@ -361,7 +361,7 @@
 
     <!-- Share Facebook -->
     
-        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com//2017/02/23/hello-world/index.html" target="_blank">
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com//2017/04/24/微信小程序开发总结/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Facebook
             </li>
@@ -370,7 +370,7 @@
 
     <!-- Share Google+ -->
     
-        <a class="post_share-link" href="https://plus.google.com/share?url=http://yoursite.com//2017/02/23/hello-world/index.html" target="_blank">
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://yoursite.com//2017/04/24/微信小程序开发总结/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Google+
             </li>
@@ -394,15 +394,28 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+        <h2 id="data"><a href="#data" class="headerlink" title="data-*"></a>data-*</h2><p>data-* 属性是用于存储页面或应用程序的私有自定义数据，存储的数据能够被页面的JavaScript中使用,也是HTML5才有的新属性。</p>
+<h3 id="在wxml文件中通过添加data-属性来传递我们需要的值"><a href="#在wxml文件中通过添加data-属性来传递我们需要的值" class="headerlink" title="在wxml文件中通过添加data-属性来传递我们需要的值"></a>在wxml文件中通过添加data-属性来传递我们需要的值</h3><pre><code>&lt;view class=&quot;mood-item&quot; data-id=&quot;{{item.id}}&quot; bindtap=&quot;moodDetail&quot;&gt;&lt;/view&gt;
+</code></pre><h3 id="在js文件中获取值"><a href="#在js文件中获取值" class="headerlink" title="在js文件中获取值"></a>在js文件中获取值</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">moodDetail: <span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123;</div><div class="line"></div><div class="line">    <span class="keyword">var</span> data = e.currentTarget.dataset;</div><div class="line">    <span class="keyword">var</span> id = data.id;</div><div class="line">  &#125;</div></pre></td></tr></table></figure>
+<h2 id="通过navigator传递参数"><a href="#通过navigator传递参数" class="headerlink" title="通过navigator传递参数"></a>通过navigator传递参数</h2><h3 id="在navigator的url中添加需要传递的值"><a href="#在navigator的url中添加需要传递的值" class="headerlink" title="在navigator的url中添加需要传递的值"></a>在navigator的url中添加需要传递的值</h3><ul>
+<li>在wxml文件中，通过控件<code>&lt;navigator /&gt;</code>   <br></li>
+</ul>
+<p><code>&lt;navigator url=&quot;../moodDetail/moodDetail?id=&quot; &gt;&lt;/navigator&gt;</code></p>
+<ul>
+<li>在js文件中，通过api:wx.navigateTo()   <br></li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">moodDetail: <span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123;</div><div class="line"></div><div class="line">    <span class="keyword">var</span> data = e.currentTarget.dataset;</div><div class="line">    wx.navigateTo(&#123;</div><div class="line">      <span class="attr">url</span>: <span class="string">'../moodDetail/moodDetail?id='</span>+data.id</div><div class="line">    &#125;)</div><div class="line">  &#125;</div></pre></td></tr></table></figure>
+<h3 id="在跳转的页面获取值"><a href="#在跳转的页面获取值" class="headerlink" title="在跳转的页面获取值"></a>在跳转的页面获取值</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">onLoad:<span class="function"><span class="keyword">function</span>(<span class="params">options</span>)</span>&#123;</div><div class="line">    <span class="comment">// 生命周期函数--监听页面加载</span></div><div class="line">    <span class="built_in">console</span>.log(<span class="string">"onLoad======"</span>);</div><div class="line">    <span class="keyword">var</span> id = options.id;</div><div class="line">  &#125;</div></pre></td></tr></table></figure>
+<h2 id="页面间实现通信"><a href="#页面间实现通信" class="headerlink" title="页面间实现通信"></a>页面间实现通信</h2><p>大家可能会遇到这样的需求：通过A页面进入到B页面，B页面操作成功后需要返回A页面并刷新A页面的数据，这就涉及到页面之间的通信。具体可以用以下方法实现：<br></p>
+<h3 id="在A页面定义一个函数"><a href="#在A页面定义一个函数" class="headerlink" title="在A页面定义一个函数"></a>在A页面定义一个函数</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">refresh: function (isRefresh) &#123;</div><div class="line">    that.setData(&#123;</div><div class="line">      isRefresh:isRefresh</div><div class="line">    &#125;)</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="在B页面通过getCurrentPages-得到A页面的实例"><a href="#在B页面通过getCurrentPages-得到A页面的实例" class="headerlink" title="在B页面通过getCurrentPages()得到A页面的实例"></a>在B页面通过<code>getCurrentPages()</code>得到A页面的实例</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">success: function()&#123;</div><div class="line">	var pages = getCurrentPages();</div><div class="line">	if(pages.length &gt;1) &#123;</div><div class="line">	  var prePage = pages[pages.length-2];</div><div class="line">	  prePage.refresh(true);</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>得到A页面的实例然后调用这个函数，这里传入布尔值true.</p>
+<h3 id="在A页面判断isRefresh的值从而实现刷新"><a href="#在A页面判断isRefresh的值从而实现刷新" class="headerlink" title="在A页面判断isRefresh的值从而实现刷新"></a>在A页面判断<code>isRefresh</code>的值从而实现刷新</h3><p>分析小程序的页面生命周期我们可以得知B页面跳转到A页面调用的是<code>onShow()</code>方法，所以将刷新逻辑写在该方法中。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">onShow:function()&#123;</div><div class="line">    // 生命周期函数--监听页面显示</div><div class="line">    console.log(&quot;onShow======&quot;);</div><div class="line">    </div><div class="line">    if(that.data.isRefresh == true) &#123;</div><div class="line">      that.onReady();//这里onReady()方法中加载数据，所以直接调用onReady()</div><div class="line">    &#125;</div><div class="line">    that.setData(&#123;</div><div class="line">        isRefresh:false</div><div class="line">      &#125;);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="在模拟器上可以实现但真机无法实现"><a href="#在模拟器上可以实现但真机无法实现" class="headerlink" title="在模拟器上可以实现但真机无法实现"></a>在模拟器上可以实现但真机无法实现</h2><h3 id="下拉刷新在真机上无效"><a href="#下拉刷新在真机上无效" class="headerlink" title="下拉刷新在真机上无效"></a>下拉刷新在真机上无效</h3><p>在模拟器上试验多次可以正确的实现下拉刷新，但是真机上测试却是始终无法实现，真是一脸懵逼啊！对比app.json文件发现原来问题出在这里，我在开启下拉刷新配置时是这样写的：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">	&quot;enablePullDownRefresh&quot;: &quot;true&quot;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>问题就在于上述代码中<strong>“true”</strong>是一个字符串类型，应该改成布尔值类型即<strong>true</strong>就可以得到解决。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">	&quot;enablePullDownRefresh&quot;: true</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 
     
 
@@ -429,21 +442,13 @@
             <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
     <!-- Prev Nav -->
     
-        <a href="/2017/04/19/我的第一篇博客/" id="post_nav-newer" class="prev-content">
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
-                <i class="material-icons">arrow_back</i>
-            </button>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            新篇
-        </a>
-    
 
     <!-- Section Spacer -->
     <div class="section-spacer"></div>
 
     <!-- Next Nav -->
     
-        <a href="/2017/02/23/test/" id="post_nav-older" class="next-content">
+        <a href="/2017/04/19/我的第一篇博客/" id="post_nav-older" class="next-content">
             旧篇
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
